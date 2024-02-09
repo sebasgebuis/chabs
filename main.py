@@ -1,23 +1,23 @@
 import pandas as pd 
 import sys, os
-import functions
-import keyboard
+import functions as f
+import sp
 
 data = pd.read_csv('melbourne_ta_reviews.csv', sep = ',')
 
 if __name__ == '__main__':
     os.system('cls')
     while True:
-        functions.watermark()
-        print('[0]: Quit \n[1]: Search by genre \n[2]: Search by price \n[3]: Search by name')
-        key = input()
+        f.watermark()
+        print('[0]: Quit \n[1]: Search by price \n[2]: Search by name \n[3]: Search by zip code')
+        key = f.wait_key()
         if key == '0':
             # Exit button
             os.system('cls')
             sys.exit()
         elif key == '1':
             # roep functie aan
-            print('hoi')
+            sp.search_price()
         elif key == '2':
             # roep andere functie aan
             print('hoi')
