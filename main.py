@@ -24,6 +24,4 @@ if __name__ == '__main__':
         elif key == '4':
             # roep laatste functie aan
             print('hoi')
-        else:
-            print('Please provide a proper input')
         os.system('cls')
