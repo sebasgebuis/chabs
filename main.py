@@ -1,9 +1,6 @@
-import pandas as pd 
 import sys, os
 import functions as f
 import sp
-
-data = pd.read_csv('melbourne_ta_reviews.csv', sep = ',')
 
 if __name__ == '__main__':
     os.system('cls')
